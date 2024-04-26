@@ -1,0 +1,180 @@
+a:link, a:visited, a:active, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.main, .general-info, .menu-bar {
+    display: flex;
+}
+
+.main{
+   justify-content: baseline;
+   padding: 1.5em;
+   gap: 3em;
+   background-color: #f2f2f2;
+}
+.menu-bar button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    background-color: #28666e;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.info-container li:hover {
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.center-panel img, .general-info img {
+    border: 3px solid #28666e;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 1em;
+    transition: transform 0.3s ease;
+}
+.center-panel img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.info-container {
+    width: 800px;
+    background-color: #ffffff;
+    font-size: large;
+}
+
+.general-info .name-and-more {
+    margin-left: 10px;
+}
+
+.menu-bar .derecha {
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 5px;
+}
+
+
+.info-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.name-and-more h1, .name-and-more h2, .name-and-more h3, .center-panel .name-and-more h1, .center-panel .name-and-more h2, .center-panel .name-and-more h3 {
+    margin: 5px 0;
+    color: #28666e;
+}
+
+.menu-bar button:hover {
+    background-color: #1c4c56;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.detailed-info {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.menu-bar {
+    justify-content: baseline;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f4f6;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #e1e2e5;
+}
+
+.menu-button.active {
+    background-color: #28666e;
+    color: #ffffff;
+}
+
+.right-aligned {
+    margin-left: auto;
+}
+
+.info-container li p {
+    margin: 5px 0;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.info-container li:last-child p {
+    border-bottom: none;
+}
+
+
+.list-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .list-info {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    flex: 3;
+  }
+  
+  .list-info img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    max-width: 150px;
+    border-radius: 5px;
+  }
+  
+  .list-item:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    border: 3px solid #28666e;
+    transform: scale(1.05);
+  }
+  
+  
+  .list-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .list-block h2 {
+    font-size: 1.5em;
+    color: #28666e;
+  }
+  
+  .list-block ul {
+    padding-left: 20px;
+  }
+  
+  .list-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }

@@ -1,0 +1,9 @@
+Ref;Nombre;Descripcion;Departamento;Ciudad;Horario;Remuneracion;Usuario;TipoPublicacion;FechaAlta
+O1;Desarrollador Frontend;Únete a nuestro equipo de desarrollo frontend y crea experiencias de usuario excepcionales.;Montevideo;Montevideo;09:00 - 18:00;90000;U11;TP1;14/08/23
+O2;Estratega de Negocios;Forma parte de nuestro equipo de estrategia y contribuye al crecimiento de las empresas clientes.;Maldonado;Punta del Este;08:00 - 17:00;80000;U13;TP3;14/08/23
+O3;Diseñador UX/UI;Trabaja en colaboración con nuestro talentoso equipo de diseño para crear soluciones impactantes.;Colonia;Rosario;14:00 - 18:00;65000;U12;TP3;13/08/23
+O4;Analista de Datos;Ayuda a nuestros clientes a tomar decisiones informadas basadas en análisis y visualizaciones de datos.;Maldonado;Maldonado;09:00 - 13:00;40000;U14;TP1;11/08/23
+O5;Content Manager;Gestiona y crea contenido persuasivo y relevante para impulsar la presencia en línea de nuestros clientes.;Montevideo;Montevideo;18:00 - 22:00;10000;U15;TP2;20/08/23
+O6;Soporte Técnico;Ofrece un excelente servicio de soporte técnico a nuestros clientes, resolviendo problemas y brindando soluciones.;Lavalleja;Minas;09:00 - 18:00;30000;U16;TP4;15/08/23
+O7;A. de Marketing Digital;Únete a nuestro equipo de marketing y trabaja en estrategias digitales innovadoras.;Flores;Flores;10:00 - 19:00;80000;U11;TP1;15/08/23
+O8;Contador Senior;Únete a nuestro equipo contable y ayuda en la gestión financiera de la empresa.;Colonia;Colonia Suiza;08:30 - 17:30;100000;U13;TP2;16/08/23

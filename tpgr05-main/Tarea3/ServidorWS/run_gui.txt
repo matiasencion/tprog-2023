@@ -1,0 +1,10 @@
+java -cp .\lib\hsqldb\hsqldb.jar org.hsqldb.util.DatabaseManagerSwing
+
+
+
+#Type: HSQL Database Engine In-memory
+#URL: jdbc:hsqldb:file:ofertasFinalizadas
+#User: SA
+
+
+#DROP SCHEMA PUBLIC CASCADE

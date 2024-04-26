@@ -1,0 +1,226 @@
+@charset "UTF-8";
+#logo {
+    max-height: 50px; 
+    width: auto;
+}
+body{
+	background-color: #28666e;;
+}
+.bg-custom {
+    background-color: #3f838c;
+}
+
+.navbar-nav{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	gap:1em;
+	margin: 0.5em;
+}
+.navbar-nav .nav-item .nav-link {
+
+    color: white; /* Cambia el color del texto a blanco */
+    font-weight: bold;
+}
+.nav-item{
+	background-color: #28666e;
+	padding: 0.5em;
+	width: 90%;
+	text-align: center;
+	border-radius: 20px;
+}
+.job-card {
+  background-color: #ffffff;
+  padding: 15px 30px; /* Reducido el padding vertical y aumentado el horizontal */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+.btn-primary,.btn {
+  text-decoration: none;
+  background-color: #28666e;
+  color: #fff;
+  
+  border-style: none;
+  font-weight: 600;
+}      
+.btn:focus,
+.btn:active {
+    text-decoration: none;
+  background-color: #28666e;
+  color: #fff;
+  font-weight: 600;
+}        
+.text-center
+{
+	  color: #28666e;
+	  font-weight: 600;
+
+}
+#typed-output {
+            font-size: 24px;
+            font-weight: bold;
+            color: whitesmoke; /* Color del texto */
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.7); /* Sombra del texto */
+        }
+        
+        
+        
+        
+.profile-photo-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+	 margin-top: 3em;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centra el contenedor de la imagen */
+  overflow: hidden; /* Asegura que nada se salga del borde redondeado */
+}
+
+#profile-photo {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: 1em;
+  object-fit: cover;
+}
+
+
+/* Asumiendo que quieres que todos los botones dentro de .navbar-nav parezcan enlaces */
+.navbar-nav button.nav-link {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: inline;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button; /* para estilos de plataforma */
+}
+
+/* Cambia el color al pasar el ratón por encima para que coincida con tus otros enlaces de navegación */
+.navbar-nav button.nav-link:hover,
+.navbar-nav button.nav-link:focus {
+  text-decoration: underline; /* o cualquier otro efecto que desees */
+  color: #fff; /* Cambia al color que quieras para el hover */
+}
+body::before {
+    content: '';
+    position: fixed; /* O 'absolute' si el contenedor no es 'body' */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	  background-image: url("media/images//fondopagina.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Ajusta el nivel de desenfoque según sea necesario */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    position: fixed; /* O 'absolute' si el contenedor no es 'body' */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	  background-image: url("media/images//fondopagina.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Ajusta el nivel de desenfoque según sea necesario */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+ 
+
+
+
+
+
+
+
+
+
+.bg-custom
+{
+	background-color: transparent;
+	
+}
+
+.navbar-nav .nav-item .nav-link {
+
+    color: white; /* Cambia el color del texto a blanco */
+    font-weight: bold;
+}
+.nav-item{
+	background-color: #28666e;
+	padding: 0.5em;
+	margin: 0.5em;
+	text-align: center;
+	border-radius: 20px;
+}
+.row{
+display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	
+}
+.row img{
+	width: 100%;
+	border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+
+}
+.card{
+	max-width: 10000px;
+	width: 90%;
+	border-radius: 20px;
+	background-color: #3f838c;
+}
+.col-4{
+		max-width: 10000px;
+	height: 100%;
+	width: 100%;
+}
+h5{
+	color: whitesmoke;
+}
+small{
+	font-weight: 600;
+	color: ghostwhite;
+}
+.card-body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+

@@ -1,0 +1,88 @@
+/* registerHtml.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #28666e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2em 2em;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.register-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 400;
+    border-bottom: 2px solid #0099ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+    width: 48%; 
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Asegurarse de que el padding y el borde estén incluidos en el ancho total */
+}
+
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+    border-color: #28666e;
+}
+
+.register-form button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #28666e;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.register-form button:hover {
+    background-color: #0077cc;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten automáticamente */
+    justify-content: space-between;
+}
+
+.register-form textarea {
+    width: 100%; /* El textarea tendrá el ancho completo siempre */
+}
+
+
+

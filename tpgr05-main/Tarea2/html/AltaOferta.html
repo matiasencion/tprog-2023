@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width , initial-scale=1.0">
+        <title>Alta de Oferta</title>
+        <link rel="stylesheet" href="styles/headerandreset.css">
+        <link rel="stylesheet" href="styles/left-panel.css">
+        <link rel="stylesheet" href="styles/styleAltaOferta.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <a href="homeEmpresa.html"><img id="logo" class="logo" src="./assets/logo.png" alt="Logo de la empresa"></a>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <button class="search-button">Buscar</button>
+            </div>
+            <div class="profile-section">
+                <!--<button class="login-button">Iniciar sesión</button>
+                <button class="register-button">Registrarse</button>-->
+                <a href="PerfilEmpresa.html">
+                    <div id="header-to-profile">
+                        <img tag="profile-photo" src="assets/ecotech.jpg"/>
+                        <p id="header-nickname"><b>EcoTech</b></p> 
+                    </div>
+                </a>
+                <a href="home.html"><button>Cerrar Sesión</button></a>
+            </div>
+        </header>
+        <div class="main">
+            <div class="left-panel">
+                <div class="profile-panel">
+                    <a href="PerfilEmpresa.html"><h2>Mi Perfil</h2></a>
+                    <ul>
+                        <a href="AltaOferta.html"><li>Alta Oferta Laboral</li></a>
+                        <a href="CompraPaquetes.html"><li>Comprar Paquetes</li></a>
+                        <a href="ConsultaPaquetesEmpresa.html"><li>Consultar Paquetes</li></a>
+                        <a href="ConsultaOfertasEmpresa.html"><li>Consultar Ofertas</li></a>
+                        <a href="ConsultaTiposPublicacionEmpresa.html"><li>Consultar Tipos Publicación</li></a>
+                        <a href="ConsultaUsuariosEmpresa.html"><li>Consultar Usuarios</li></a>
+                    </ul>
+                </div>
+                <div class="keywords-section">
+                    <h2>Keywords</h2>
+                    <ul>
+                        <li>Tiempo completo</li>
+                        <li>Medio tiempo</li>
+                        <li>Remoto</li>
+                        <li>Permanente</li>
+                        <li>Computación</li>
+                        <li>Administración</li>
+                        <li>Logística</li>
+                        <li>Contabilidad</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="center-panel">
+        <form class="container3" action="homeEmpresa.html">
+            <h1>Alta de Oferta Laboral</h1>
+            <!-- Tipo de Publicación -->
+            <div class="input-row">
+                <label for="tipoPublicacion">Tipo de Publicación</label>
+                <select name="tipoPublicacion" id="tipoPublicacion" required>
+                    <option value="" disabled selected hidden></option>
+                    <option value="postulante">Premium</option>
+                    <option value="empresa">Destacado</option>
+                    <option value="empresa">Estándar</option>
+                    <option value="empresa">Básico</option>
+                </select>
+            </div>
+        
+            <div class="input-row">
+                <input id="nombre" type="text" placeholder="Nombre" required>
+                <input id="descripcion" type="text" placeholder="Descripción" required>
+            </div>
+        
+            <div class="input-row">
+                <input id="horarioI" type="number" placeholder="Horario Inicio" required>
+                <input id="horarioF" type="number" placeholder="Horario Fin" required>
+            </div>
+        
+            <div class="input-row">
+                <input id="remuneracion" type="number" placeholder="Remuneración" required>
+                <input id="imagen" type="text" placeholder="Imagen">
+            </div>
+        
+            <div class="input-row">
+                <input id="departamento" type="text" placeholder="Departamento" required>
+                <input id="ciudad" type="text" placeholder="Ciudad" required>
+            </div>
+        
+            <div class="input-row">
+                <label for="keywords">Keywords:</label>
+                
+                <select name="keywords" id="keywords" multiple>
+                    <option value="tiempoCompleto">Tiempo Completo</option>
+                    <option value="medioTiempo">Medio Tiempo</option>
+                    <option value="remoto">Remoto</option>
+                    <option value="permanente">Permanente</option>
+                    <option value="computacion">Computación</option>
+                    <option value="administracion">Administración</option>
+                    <option value="logica">Lógica</option>
+                    <option value="contabilidad">Contabilidad</option>
+                </select>
+            </div>
+        
+            <div class="input-row">
+                <label for="pago">Método de pago</label>
+                <select name="pago" id="pago" required>
+                    <option value="" disabled hidden selected></option>
+                    <option value="general">General</option>
+                    <option value="paquete">Paquete Básico</option>
+                    <option value="paquete">Paquete Destacado</option>
+                </select>
+            </div>
+        
+            <!-- Botones de Acción -->
+            <div class="option-container">
+                <input class="botonForm" type="submit" value="Aceptar">
+                <a class="botonForm" href="homeEmpresa.html">Cancelar</a>            </div>
+        </form>
+
+    </div>
+        </div>
+    </body>
+</html>

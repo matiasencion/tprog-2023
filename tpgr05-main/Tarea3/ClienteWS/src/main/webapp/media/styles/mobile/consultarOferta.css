@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@charset "UTF-8";
+#logo {
+    max-height: 50px; 
+    width: auto;
+}
+body{
+	background-color: #3f838c;;
+	box-sizing: border-box;
+}
+
+
+.navbar-nav{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	margin: 0.5em;
+}
+.navbar-nav .nav-item .nav-link {
+
+    color: white; /* Cambia el color del texto a blanco */
+    font-weight: bold;
+}
+.nav-item{
+	background-color: #28666e;
+	padding: 0.5em;
+	width: 90%;
+	height: 2%;
+	text-align: center;
+	border-radius: 20px;
+}
+
+
+
+
+/* Asumiendo que quieres que todos los botones dentro de .navbar-nav parezcan enlaces */
+.navbar-nav button.nav-link {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: inline;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button; /* para estilos de plataforma */
+}
+
+.navbar-nav button.nav-link:hover,
+.navbar-nav button.nav-link:focus {
+  text-decoration: underline; /* o cualquier otro efecto que desees */
+  color: #fff; /* Cambia al color que quieras para el hover */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form styling */
+.main form {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+/* Label styling */
+form label {
+	text-align: center;
+	padding: 0.5em;
+	background-color: #28666e;
+	border-radius: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+    display: block; /* Ensures label is above the input */
+    margin-bottom: 5px;
+}
+
+/* Select box styling */
+form select {
+	padding: 1em;
+    width: 40%; /* Ensures select box takes full width */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: 38px;
+    font-size: 16px;
+}
+
+/* Button styling */
+form .btn-primary {
+    width: 100%; /* Full-width button */
+    background-color: #28666e;
+    border-color: whitesmoke;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.list-item {
+    background-color: #3f838c;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 2em;
+}
+nav::before{
+
+	filter: blur(20px);
+}
+/* Image Styling */
+.list-info img {
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+    height: auto;
+    display: block;
+}
+.list-buy{
+	display: flex;
+	width: 100%;
+	margin-bottom: 0.5em;
+	justify-content: center;
+}
+/* Text Block Styling */
+.list-block {
+    padding: 10px;
+    text-align: left;
+}
+
+.list-block h2 {
+    color: ghostwhite;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.list-block p {
+    color: whitesmoke;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.button-view {
+    display: block;
+    width: 100%;
+    background-color: #28666e;
+    color: white;
+
+    text-align: center;
+    padding: 12px 0;
+	        border: 1px solid #ced4da;
+
+    width: 100px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-view:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 576px) {
+    .list-item {
+        margin: 15px auto;
+        max-width: 540px;
+    }
+
+    .list-block h2 {
+        font-size: 20px;
+    }
+
+    .list-block p {
+        font-size: 16px;
+    }
+
+    .button-view {
+        padding: 15px 0;
+        font-size: 18px;
+    }
+}
+
+.row{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Elegant and clean font */
+    font-size: 32px; /* Large and prominent size */
+    color: snow; /* Dark color for contrast and readability */
+    text-align: center; /* Centered for impact */
+    margin-top: 20px; /* Spacing at the top */
+    margin-bottom: 20px; /* Spacing at the bottom */
+    letter-spacing: 1.5px; /* Slightly spaced out letters */
+    text-transform: uppercase; /* Uppercase for added style */
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.2; /* Adjust line height for readability */
+    background-color: black;
+}
+body::before {
+    content: '';
+    position: fixed; /* O 'absolute' si el contenedor no es 'body' */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	  background-image: url("media/images//fondopagina.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Ajusta el nivel de desenfoque según sea necesario */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    position: fixed; /* O 'absolute' si el contenedor no es 'body' */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	  background-image: url("media/images//fondopagina.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Ajusta el nivel de desenfoque según sea necesario */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+ 
+
+
+
+
+
+
+
+
+
+.bg-custom
+{
+	background-color: transparent;
+	
+}
+
+.navbar-nav .nav-item .nav-link {
+
+    color: white; /* Cambia el color del texto a blanco */
+    font-weight: bold;
+}
+.nav-item{
+	background-color: #28666e;
+	padding: 0.5em;
+	margin: 0.5em;
+	text-align: center;
+	border-radius: 20px;
+}
+p{
+	font-weight:800;
+}
+
+
+
+
+
+
+

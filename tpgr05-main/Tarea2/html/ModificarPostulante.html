@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Perfil</title>
+    <link rel="stylesheet" href="./styles/headerandreset.css">
+    <link rel="stylesheet" href="./styles/left-panel.css">
+    <link rel="stylesheet" href="./styles/ModificarPerfil.css">
+</head>
+<body>
+    <header>
+        <a href="homePostulante.html"><img id="logo" class="logo" src="./assets/logo.png" alt="Logo de la empresa"></a>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <div class="profile-section">
+            <!--<button class="login-button">Iniciar sesión</button>
+            <button class="register-button">Registrarse</button>-->
+            <a href="PerfilPostulante.html">
+                <div id="header-to-profile">
+                    <img tag="profile-photo" src="assets/lgarcia.webp"/>
+                    <p id="header-nickname"><b>lgarcia</b></p>
+                </div>
+            </a>
+            <a href="home.html"><button>Cerrar Sesión</button></a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="left-panel">
+            <div class="profile-panel">
+                <a href="PerfilPostulante.html"><h2>Mi Perfil</h2></a>
+                <ul>
+                    <a href="PostularseOferta.html"><li>Postularse a Oferta</li></a>
+                    <a href="ConsultaOfertasPostulante.html"><li>Consultar Ofertas</li></a>
+                    <a href="ConsultaPaquetesPostulante.html"><li>Consultar Paquetes</li></a>
+                    <a href="ConsultaTiposPublicacionPostulante.html"><li>Consultar Tipos Publicación</li></a>
+                    <a href="ConsultaUsuariosPostulante.html"><li>Consultar Usuarios</li></a>
+                </ul>
+            </div>
+            <div class="keywords-section">
+                <h2>Keywords</h2>
+                <ul>
+                    <li>Tiempo completo</li>
+                    <li>Medio tiempo</li>
+                    <li>Remoto</li>
+                    <li>Permanente</li>
+                    <li>Computación</li>
+                    <li>Administración</li>
+                    <li>Logística</li>
+                    <li>Contabilidad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="center-panel">
+            <div class="general-info">
+                <div class="edit-photo">
+                    <img tag="profile-photo" src="assets/lgarcia.webp"/>
+                    <button>Editar</button>
+                </div>
+                <div class="name-and-more">
+                    <h1>Lucía García</h1>
+                    <h2>lgarcia85@gmail.com</h2>
+                    <h3>Último Ingreso: <span id="last-date"></span></h3>
+                </div>
+            </div>
+            <div class="detailed-info">
+                    <form id="form-edit-profile" class="info-container">
+                        <!--DONDE SE MOSTRARA LOS ATRIBUTOS PARA CAMBIAR-->
+                        <div class="flex-line">
+                            <p><b>Nickname: </b>lgarcia</p>
+                        </div>
+                        <div class="flex-line">
+                            <p><b>Nombre: </b></p>
+                            <input type="text" id="input-name" value="Lucía"><br>
+                        </div>
+                        <div class="flex-line">
+                            <p for="input-lastname"><b>Apellido: </b></p>
+                            <input type="text" id="input-lastname" value="Garcia"><br>
+                        </div>
+                        <div class="flex-line">
+                            <p><b>Email: </b>lgarcia85@gmail.com</p>
+                        </div>
+                        <div class="flex-line">
+                            <p for="input-website"><b>Fecha de Nacimiento: </b></p>
+                            <input type="date" id="input-date" value="1985-03-15"><br>
+                        </div>
+                        <div class="flex-line">
+                            <p for="input-description"><b>Nacionalidad: </b></p>
+                            <input type="text" id="input-nationality" value="Uruguaya"><br>
+                        </div>
+                    </form>
+                <div class="menu-bar">
+                    <a href="PerfilPostulante.html"><button id="register-accept">Aceptar</button></a>
+                    <a href="PerfilPostulante.html"><button id="register-cancel">Cancelar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/scriptModificarPerfil.js"></script>
+</body>
+</html>

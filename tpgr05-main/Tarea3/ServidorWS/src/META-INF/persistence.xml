@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="3.0"
+	xmlns="https://jakarta.ee/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence 
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+	<persistence-unit name="ofertasFinalizadas"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>ofertasFinalizadas.PostulacionOF</class>
+		<class>ofertasFinalizadas.PostulacionId</class>
+
+		<class>ofertasFinalizadas.OfertaFinalizada</class>
+		<class>ofertasFinalizadas.EmpresaOF</class>
+		<class>ofertasFinalizadas.Usuario</class>
+		<class>ofertasFinalizadas.PostulanteOF</class>
+		<properties>
+			<property name="jakarta.persistence.jdbc.driver"
+				value="org.hsqldb.jdbcDriver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:hsqldb:file:ofertasFinalizadas;shutdown=true" />
+			<property name="jakarta.persistence.jdbc.user" value="sa" />
+			<property name="jakarta.persistence.jdbc.password" value="" />
+			<property name="eclipselink.ddl-generation"
+				value="create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+				        <property name="eclipselink.ddl-generation" value="create-tables"/>
+
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,10 @@
+# Archivos y directorios generales
+/src/logica/**/*.class
+/src/ventanas/**/*.class
+/bin/
+.metadata/
+.DS_Store
+.settings/
+.idea/
+# Archivos .class en directorios específicos
+/target/

@@ -1,0 +1,274 @@
+body {
+  font-family: 'Montserrat', sans-serif;    
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 1%;
+  flex-wrap: wrap;
+  background-color: #CAF0F8;
+}
+
+.logo {
+  width: 100px;
+  transition: opacity 0.3s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reducción del espacio entre elementos */
+  border-radius: 25px; /* Bordes un poco más reducidos */
+  background-color: #f1f3f5;
+  padding: 8px 15px; /* Padding reducido */
+  box-shadow: 0 5px 30px rgba(40, 102, 110, 0.1);
+  border: 0.12em solid #03045E;
+  width: 70%; /* Ancho reducido al 70% */
+  max-width: 600px; /* Ancho máximo reducido */
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.search-box:hover {
+  box-shadow: 0 7px 40px rgba(40, 102, 110, 0.15);
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  padding: 8px; /* Padding reducido */
+  border: none;
+  border-radius: 20px; /* Bordes un poco más reducidos */
+  outline: none;
+  font-size: 1em; /* Tamaño de fuente estándar */
+  font-family: 'Arial', sans-serif;
+  background-color: transparent;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.search-box input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  padding: 8px 20px; /* Padding reducido */
+  border: none;
+  border-radius: 20px; /* Bordes un poco más reducidos */
+  cursor: pointer;
+  font-size: 1em; /* Tamaño de fuente estándar */
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+  background-color: #28666e;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.search-button:hover, .search-button:focus {
+  background-color: #0077B6;
+  transform: translateY(-2px); /* Efecto ligeramente reducido */
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+.buttons-section {
+  display: flex;
+  gap: 10px;
+}
+
+.login-button, .register-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Ajustado para que la transición se aplique sobre la propiedad 'background-color' */
+  letter-spacing: 0.5px;  /* Espaciado entre letras para un aspecto más estilizado */
+}
+
+.login-button {
+  background-color: #28666e;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+}
+
+.login-button:hover {
+  background-color: #1e4d56; /* Un tono más oscuro del color principal al hacer hover */
+}
+
+.register-button {
+  background-color: #ffffff;  /* Fondo blanco para contraste */
+  color: #28666e;  /* Color principal para el texto */
+  border: 2px solid #28666e;  /* Borde del mismo color para definir el botón */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.register-button:hover {
+  background-color: #f1f1f1; /* Un ligero cambio de color al hacer hover */
+}
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly; /* Asegura un espacio entre las dos secciones */
+  padding: 20px;
+  background: linear-gradient(360deg, rgba(0,119,182,1) 0%, rgba(136,200,226,1) 64%, rgba(154,211,232,1) 73%, rgba(202,240,248,1) 100%, rgba(0,212,255,1) 100%);
+  ;
+}
+
+.keywords-section {
+  flex-basis: 20%;
+  min-width: 200px;
+  flex-grow: 0; /* Asegura que no crezca más allá de su base */
+  flex-shrink: 0; /* Asegura que no se reduzca */
+  margin-right: 2em; /* Espacio entre las dos secciones */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent; /* Un fondo suave para la sección completa */
+}
+
+
+
+.keywords-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #28666e;
+  border-bottom: 2px solid #28666e;
+  padding-bottom: 10px;
+}
+
+.keywords-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.keywords-section li {
+  display: flex;
+  font-weight: 600;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #28666e;
+  color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.keywords-section li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: 75%
+}
+
+
+
+.job-card {
+  background-color: #ffffff;
+  padding: 15px 30px; /* Reducido el padding vertical y aumentado el horizontal */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px; /* Aumentado el max-width */
+  width: 100%; /* Hace que tome todo el ancho disponible */
+  transition: transform 0.3s;
+  height: 200px; /* Reducido el height */
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.job-image {
+  width: 35%; /* Ajustado el width */
+  border-radius: 10px;
+  height: 100%; /* La imagen tomará la altura completa de la tarjeta */
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%; /* Ajustado el width */
+}
+
+
+
+
+.job-card:hover {
+    transform: scale(1.05); /* Esto aumentará el tamaño de la tarjeta un 5% al hacer hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Aumenta un poco la sombra para darle más énfasis a la tarjeta en hover */
+}
+
+
+
+.job-title {
+  color: #28666e;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.company-name {
+  color: #28666e;
+  font-size: 1.2em;
+}
+
+.view-more-button {
+  text-decoration: none;
+  background-color: #28666e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+
+  transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+  background-color: #1e4d56;
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.search-box {
+  animation: slideUp 0.5s ease forwards;
+}
+.header-title {
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 1em;
+  font-weight: bold;
+  color: #28666e; /* Color oscuro para el título */
+}

@@ -1,0 +1,10 @@
+Poner el link de los web services en ../settings.properties
+
+Si estas en Windows tenes que poner la direccion de tu JAVA_HOME en /Tomcat/bin/catalina.bat en donde dice "set JAVA_HOME=..."
+
+Dar permisos a los .sh:
+    chmod +x generar*
+    chmod +x levantar*
+
+Instalar maven:
+    sudo apt install maven

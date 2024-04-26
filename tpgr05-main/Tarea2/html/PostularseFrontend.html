@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="styles/headerandreset.css">
+    <link rel="stylesheet" href="styles/left-panel.css">
+    <link rel="stylesheet" href="styles/infoOfertaFrontend.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="homePostulante.html"><img id="logo" class="logo" src="./assets/logo.png" alt="Logo de la empresa"/></a>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-button">Buscar</button>
+        </div>
+
+        <div class="profile-section">
+            <!--<button class="login-button">Iniciar sesión</button>
+            <button class="register-button">Registrarse</button>-->
+            <a href="PerfilPostulante.html">
+                <div id="header-to-profile">
+                    <img tag="profile-photo" src="assets/lgarcia.webp"/>
+                    <p id="header-nickname"><b>lgarcia</b></p>
+                </div>
+            </a>
+            <a href="home.html"><button>Cerrar Sesión</button></a>
+        </div>
+    </header>
+    <main id="frontend-visitante">
+        <div class="left-panel">
+            <div class="profile-panel">
+                <a href="PerfilPostulante.html"><h2>Mi Perfil</h2></a>
+                <ul>
+                    <a href="PostularseOferta.html"><li>Postularse a Oferta</li></a>
+                    <a href="ConsultaOfertasPostulante.html"><li>Consultar Ofertas</li></a>
+                    <a href="ConsultaPaquetesPostulante.html"><li>Consultar Paquetes</li></a>
+                    <a href="ConsultaTiposPublicacionPostulante.html"><li>Consultar Tipos Publicación</li></a>
+                    <a href="ConsultaUsuariosPostulante.html"><li>Consultar Usuarios</li></a>
+                </ul>
+            </div>
+            <div class="keywords-section">
+                <h2>Keywords</h2>
+                <ul>
+                    <li>Tiempo completo</li>
+                    <li>Medio tiempo</li>
+                    <li>Remoto</li>
+                    <li>Permanente</li>
+                    <li>Computación</li>
+                    <li>Administración</li>
+                    <li>Logística</li>
+                    <li>Contabilidad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="main-content">
+                <div class="job-card">
+                    <div class="info-oferta">
+                        <img src="assets/oferta-frontend.png" alt="foto trabajo">
+                        <h2>Desarrollador Frontend</h2>
+                        
+                        <ul>
+                            <li class="dflex">
+                                <h3>Nombre: </h3>
+                                <p>Desarrollador Frontend</p>
+                            </li>
+                            <li class="dflex">
+                                <h3>Descripcion: </h3>
+                                <p>Únete a nuestro equipo de desarrollo frontend y crea experiencias de usuario excepcionales.</p>
+                            </li>
+                            <li class="dflex">
+                                <h3>Horario </h3>
+                                <p>09:00-18:00</p>
+                            </li>
+                           
+                            <li class="dflex">
+                                <h3>Departamento: </h3>
+                                <p>Montevideo</p>
+                            </li>
+                            <li class="dflex">
+                                <h3>Ciudad: </h3>
+                                <p>Montevideo</p>
+                            </li>
+                            <li class="dflex">
+                                <h3>Remuneracion: </h3>
+                                <p>90000.0</p>
+                            </li>
+                            <li class="dflex">
+                                <h3>Fecha de alta: </h3>
+                                <p>14/08/23</p>
+                            </li>
+                            <li class="dflex">
+                                <h3>Keywords: </h3>
+                                <p>...</p>
+                            </li>
+                            <li class="dflex">
+                                <h3>CV: </h3>
+                                <textarea id="input-cv" rows="5" cols="50"></textarea>
+                            </li>
+                            <li class="dflex">
+                                <h3>Motivación: </h3>
+                                <textarea id="input-motivacion" rows="5" cols="50"></textarea>
+                            </li>
+                            <div class="menu-bar">
+                                <a href="infoPostulacionFrontend.html"><button class="menu-button active" id="accept-button">Aceptar</button></a>
+                                <a href="PostularseOferta.html"><button class="menu-button" id="cancel-button">Cancelar</button></a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+</body>
+</html>

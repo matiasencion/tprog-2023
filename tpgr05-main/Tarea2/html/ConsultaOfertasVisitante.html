@@ -1,0 +1,76 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Ofertas</title>
+    <link rel="stylesheet" href="styles/headerandreset.css">
+    <link rel="stylesheet" href="styles/left-panel.css">
+    <link rel="stylesheet" href="styles/styleConsultaOfertas.css">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img id="logo" class="logo" src="./assets/logo.png" alt="Logo de la empresa"></a>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <div class="buttons-section">
+            <a href="inicioSesion.html"><button class="login-button">Iniciar sesión</button></a>
+            <a href="register.html"><button class="register-button">Registrarse</button></a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="left-panel">
+            <div class="profile-panel">
+                <a href="home.html"><h2>Inicio</h2></a>
+                <ul>
+                    <a href="ConsultaOfertasVisitante.html"><li>Consultar Ofertas</li></a>
+                    <a href="ConsultaPaquetesVisitante.html"><li>Consultar Paquetes</li></a>
+                    <a href="ConsultaTiposPublicacionVisitante.html"><li>Consultar Tipos Publicación</li></a>
+                    <a href="ConsultaUsuariosVisitante.html"><li>Consultar Usuarios</li></a>
+                </ul>
+            </div>
+            <div class="keywords-section">
+                <h2>Keywords</h2>
+                <ul>
+                    <li>Tiempo completo</li>
+                    <li>Medio tiempo</li>
+                    <li>Remoto</li>
+                    <li>Permanente</li>
+                    <li>Computación</li>
+                    <li>Administración</li>
+                    <li>Logística</li>
+                    <li>Contabilidad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="center-panel">
+            <h1>Ofertas</h1>
+            <div class="filters-panel">
+                <label for="select-empresa">Empresa: </label>
+                <select id="select-empresa">
+                    <option id="option-none"></option>
+                    <option id="option-ecotech">EcoTech</option>
+                </select>
+                <label for="select-keyword">Keyword: </label>
+                <select id="select-keyword">
+                    <option></option>
+                    <option>Tiempo completo</option>
+                    <option>Medio tiempo</option>
+                    <option>Remoto</option>
+                    <option>Permanente</option>
+                    <option>Computación</option>
+                    <option>Administración</option>
+                    <option>Logística</option>
+                    <option>Contabilidad</option>
+                </select>
+            </div>
+            <div id="info-container">
+               <!--hola-->
+            </div>
+        </div>
+    </div>
+    <script src="scripts/scriptConsultaOfertasVisitante.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="./styles/headerandreset.css">
+    <link rel="stylesheet" href="./styles/left-panel.css">
+    <link rel="stylesheet" href="./styles/consultarPerfil.css">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img id="logo" class="logo" src="./assets/logo.png" alt="Logo de la empresa"></a>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <div class="buttons-section">
+            <a href="inicioSesion.html"><button class="login-button">Iniciar sesión</button></a>
+            <a href="register.html"><button class="register-button">Registrarse</button></a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="left-panel">
+            <div class="profile-panel">
+                <a href="PerfilEmpresa.html"><h2>Mi Perfil</h2></a>
+                <ul>
+                    <a href="ConsultaOfertasVisitante.html"><li>Consultar Ofertas</li></a>
+                    <a href="ConsultaPaquetesVisitante.html"><li>Consultar Paquetes</li></a>
+                    <a href="ConsultaTiposPublicacionVisitante.html"><li>Consultar Tipos Publicación</li></a>
+                    <a href="ConsultaUsuariosVisitante.html"><li>Consultar Usuarios</li></a>
+                </ul>
+            </div>
+            <div class="keywords-section">
+                <h2>Keywords</h2>
+                <ul>
+                    <li>Tiempo completo</li>
+                    <li>Medio tiempo</li>
+                    <li>Remoto</li>
+                    <li>Permanente</li>
+                    <li>Computación</li>
+                    <li>Administración</li>
+                    <li>Logística</li>
+                    <li>Contabilidad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="center-panel">
+            <div class="general-info">
+                <img tag="profile-photo" src="assets/lgarcia.webp"/>
+                <div class="name-and-more">
+                    <h1>Lucía García</h1>
+                    <h2>lgarcia85@gmail.com</h2>
+                    <h3>Último Ingreso: <span id="last-date"></span></h3>
+                </div>
+            </div>
+            <div class="detailed-info">
+                <div class="menu-bar">
+                    <button class="menu-button active" id="profile-button">Perfil</button>
+                    <button class="menu-button" id="postulations-button">Postulaciones</button>
+                </div>
+                <div id="info-container" class="info-container">
+                    <ul>
+                        <li><p><b>Nickname: </b><span id="profile-nickname">lgarcia</span></p></li>
+                        <li><p><b>Nombre: </b>Lucía</p></li>
+                        <li><p><b>Apellido: </b>García</p></li>
+                        <li><p><b>Email: </b>lgarcia85@gmail.com</p></li>
+                        <li><p><b>Fecha de Nacimiento: </b>15/03/1985</p></li>
+                        <li><p><b>Nacionalidad: </b>Uruguaya</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/scriptPerfilPostulanteVisitante.js"></script>
+</body>
+</html>

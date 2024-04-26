@@ -1,0 +1,120 @@
+body {
+  font-family: 'Montserrat', sans-serif;    
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+    background-color: #f2f2f2;
+  justify-content: space-evenly; /* Asegura un espacio entre las dos secciones */
+  padding: 20px;
+  background: linear-gradient(360deg, rgba(0,119,182,1) 0%, rgba(136,200,226,1) 64%, rgba(154,211,232,1) 73%, rgba(202,240,248,1) 100%, rgba(0,212,255,1) 100%);
+  ;
+}
+
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+    background-color: #f2f2f2;
+  flex-basis: 75%
+}
+
+
+
+.job-card {
+  background-color: #ffffff;
+  padding: 15px 30px; /* Reducido el padding vertical y aumentado el horizontal */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px; /* Aumentado el max-width */
+  width: 100%; /* Hace que tome todo el ancho disponible */
+  transition: transform 0.3s;
+  height: 200px; /* Reducido el height */
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.job-image {
+  width: 35%; /* Ajustado el width */
+  border-radius: 10px;
+  height: 100%; /* La imagen tomará la altura completa de la tarjeta */
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%; /* Ajustado el width */
+}
+
+
+
+
+.job-card:hover {
+    transform: scale(1.05); /* Esto aumentará el tamaño de la tarjeta un 5% al hacer hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Aumenta un poco la sombra para darle más énfasis a la tarjeta en hover */
+}
+
+
+
+.job-title {
+  color: #28666e;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.company-name {
+  color: #28666e;
+  font-size: 1.2em;
+}
+
+.view-more-button {
+  text-decoration: none;
+  background-color: #28666e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+
+  transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+  background-color: #1e4d56;
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.search-box {
+  animation: slideUp 0.5s ease forwards;
+}
+.header-title {
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 1em;
+  font-weight: bold;
+  color: #28666e; /* Color oscuro para el título */
+}
